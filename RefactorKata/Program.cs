@@ -12,7 +12,6 @@ namespace RefactorKata
             {
                 var cmd = conn.CreateCommand();
                 cmd.CommandText = "select * from Products";
-
                 var reader = cmd.ExecuteReader();
                 var products = new List<Product>();
 
@@ -30,8 +29,6 @@ namespace RefactorKata
                     Console.WriteLine(product.Name);
                 }
             }
-
         }
     }
-
 }
